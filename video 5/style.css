@@ -1,0 +1,9 @@
+table{
+    border: 3px dashed darkorange;
+}
+td{
+    border: 2px solid lightpink;  
+}
+th{
+    border: 2px solid slateblue;
+}

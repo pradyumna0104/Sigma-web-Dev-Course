@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - Let's Learn it.</title>
+</head>
+
+<body>
+    <h1>creating a form</h1>
+    <form action="/submit" method="post" style="border: 2px dashed red; padding: 1rem;">
+        <!-- Text input for username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Radio buttons for gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="color">Select color: </label>
+        <input type="color" name="color" id="color">
+        <br><br>
+
+        <label for="file">Select file: </label>
+        <input type="file" name="file" id="file">
+        <br><br>
+
+        <label for="date">Select date: </label>
+        <input type="date" name="date" id="date">
+        <br><br>
+
+        <label for="time">Select time: </label>
+        <input type="time" name="time" id="time">
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <form action="/submit" style="border: 2px dashed red; padding: 1rem;">
+        <textarea name="comment" rows="4" cols="50">Enter your comment here...</textarea>
+        <br><br>
+        <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
