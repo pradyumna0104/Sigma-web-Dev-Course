@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selector  */
+        /* div {
+            background-color: red;
+        } */
+
+        /* Class Selector  */
+        .red {
+            background-color: red;
+        }
+
+        /* Id Selector  */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selector  */
+        div > p {
+            /* if p is direct child of div */
+            color: blue;
+            background-color: aqua;
+        }
+
+        /* Descendant Selector  */
+        div p{ /* if p is child/grand-child/any (but must be inside) of div */
+            color: black;
+            background-color: chartreuse;
+        }
+        /* Universal selector  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{/* after visited a link once*/
+            color: blueviolet;
+        }
+        a:link{/*every link before visited*/
+            color: green;
+        }
+        a:active{/* if a link is active */
+            background-color: red;
+        }
+        a:hover{/* on hover over a link */
+            background-color: cadetblue;
+        }
+        p:first-child{
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        i am div
+        <p>i am a para inside div</p>
+    </div>
+    <div id="green">
+        i am another div
+    </div>
+    <div class="red">
+        <span>
+            <div>i am div</div>
+            <p>i am a para inside div</p>
+        </span>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.google2.com">Go to Google2</a>
+
+    <div class="one">
+        <p>i am the first child.</p>
+        <p>i am the second child.</p>
+    </div>
+</body>
+
+</html>
