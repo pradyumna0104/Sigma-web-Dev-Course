@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            box-sizing: border-box;
+        }
+        .box{
+            border: 2px dashed purple;
+            /* width: 233px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;  
+        }
+        .container{
+            border: 2px dashed purple;
+            /* width: 233px; */
+            width: 80vw;
+            min-height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;  
+            /* font-size: 18px; */
+            /* by defalut font-size is 16px*/
+        }
+        .container > div{
+            width: 50%;
+            /* this conatin 50% of parent width*/
+            border: 2px solid red;
+            /* font-size: 2em; */
+            /* 2x of parent elements font size (so size : 18*2=36px) */
+            font-size: 2rem;
+            /* 2x of root font size (so size = 12*2 = 24px) */
+        }
+        .container>div>div{
+            font-size: 1em;
+            width: 50%;
+            border: 2px solid blue;
+        }
+        .mycont{
+            border: 2px solid salmon;
+            background-color: rgb(196, 249, 250);
+            color: rgb(3, 19, 50);
+            font-size: 23px;
+            width: 80vw;
+            margin: auto;
+            /* width: 100vmin; */
+            /* in desktop vmin = min(vh,vw) = vh and in mobile vmin = min(vh,vw) = vw */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a Box
+    </div>
+    <div class="container">
+       <div>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius eligendi velit fuga! Vitae sunt saepe libero perferendis dolores sequi quo reprehenderit doloribus.
+           <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi cumque quam quo dolor eligendi hic illo est ratione harum, repellat, enim distinctio ut!
+           </div>
+       </div>
+    </div>
+    <div class="mycont">
+        i am another container
+    </div>
+</body>
+</html>
