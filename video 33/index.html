@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise -4 Multicolor NavBar</title>
+    <style>
+        :root {
+            --pricolor: rgb(255, 255, 255);
+            --seccolor: rgb(179, 171, 255);
+            --tercolor: rgb(124, 43, 255);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* padding: 20px; */
+            background-color: rgb(255, 253, 250);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav {
+            background-color: var(--seccolor);
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 5px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav ul li {
+            margin: 10px;
+            font-size: 1.05rem;
+            font-weight: bolder;
+            color: var(--pricolor);
+            cursor: pointer;
+            
+        }
+
+        .nav ul li:hover {
+            color: var(--tercolor);
+            border: 2px solid black;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        
+        .nav ul li:first-child{
+            color: var(--tercolor);
+            border: 2px solid black;
+            padding: 5px 10px;
+            border-radius: 30px;
+        }
+
+        @media only screen and (max-width:450px) {
+            .nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Dashboards</li>
+            <li>Account</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            background-color: coral;
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        /* max-width :apply below that condition */
+        /* min-width :apply above that condition*/
+        @media only screen and (max-width:500px){
+            body{
+                background-color:gold;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        /* @media screen and (orientation: landscape){} */
+        /* @media screen and (orientation: portrait ){} */
+        </style>
+</head>
+<body>
+    <div>
+        I am a Red Body Guy!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
