@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox - Ultimate Masterclass</title>
+    <style>
+        /* 1. Container Property */
+        .container{
+            height: 60vh;
+            border: 2px solid red;
+            
+            /*
+            By default flex direction row 
+            ---------------------------------
+            justify-content:horizontal (main-axis) &
+            align-item     :vertical   (cross-axis)  
+            */
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* flex-direction: row-reverse; */
+
+            /* horizontally even space around each ele, start and end also */
+            /*imp:  x [] 2x [] 2x [] 2x [] 2x [] x */
+            /* justify-content: space-around; */
+            
+            /* horizontally even space around each ele, donn't include start and end also */
+            /*imp:  [] 2x [] 2x [] 2x [] 2x [] */
+            /* justify-content:space-between; */
+
+            /*imp: 2x [] 2x [] 2x [] 2x [] 2x [] 2x */
+            /* justify-content:space-evenly; */
+            
+            /*imp: [] [] [] [] []              */
+            /* justify-content:flex-start; */
+
+            /*imp:              [] [] [] [] [] */
+            /* justify-content:flex-end; */
+
+            /* place at top */
+            /* align-items: start; */
+            
+            /* place at top */
+            /* align-items: end; */
+
+
+            /*
+            if we change flex dirrection column then 
+            ---------------------------------------
+                justify-content:vertical   (main-axis) &
+                align-item     :horizontal (cross-axis) 
+            -> all properties are reverse
+                    vertical <-> horizontal.. 
+            */
+
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+
+
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+
+            /* if we have more than 1 lines then we use align-content instead of align-items.  */
+            
+            /* align-content: flex-start; */
+            /* align-content: center; */
+            /* align-content: flex-end; */
+
+            /* flex-flow: row wrap; */
+
+            /* gap: 10px; */
+            /* row-gap: 10px; */
+            /* column-gap: 10px; */
+            /* gap: 20px 25px; */
+
+        }
+
+        /* 2. Items property */
+
+        .items{
+            width: 25px;
+            height: 25px;
+            background-color: blueviolet;
+            border: 5px solid black;
+            margin: 5px;
+            color: white;
+            font-size: 1.3rem;
+
+            /* flex-grow: 1; */
+        }
+
+        /* higher the order the element appear that last */
+        /* default order = 0 */
+        .order-1{
+            order: 1;
+            /* comparision to other grow nx faster */
+            /* flex-grow: 5; */
+            align-self: flex-end;
+        }
+        .order-10{
+            order: 10;
+            /* comparision to other shrink nx faster */
+            /* flex-shrink: 3; */
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="items order-1">1</div>
+            <div class="items order-10">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+
+            <!-- extra to check other properties -->
+
+            <!-- <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">9</div>
+            <div class="items">10</div>
+            <div class="items">11</div>
+            <div class="items">12</div>
+            <div class="items">13</div>
+            <div class="items">14</div>
+            <div class="items">15</div>
+            <div class="items">16</div>
+            <div class="items">17</div> -->
+        </div>
+    </main>
+</body>
+</html>
