@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise -4 Multicolor NavBar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <style>
+        :root {
+            --pricolor: rgb(213, 208, 255);
+            --seccolor: rgb(182, 137, 255);
+            --textcolor: rgb(255, 255, 255);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* padding: 20px; */
+            background-color: var(--pricolor);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav {
+            background-color: var(--seccolor);
+            flex-direction: row-reverse;
+            padding: 5px;
+        }
+
+        .nav ul {
+            margin: 10px;
+        }
+
+        .nav ul li {
+            display: inline;
+            margin: 10px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            cursor: pointer;
+
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: var(--textcolor);
+        }
+
+        @media only screen and (max-width:450px) {
+            .nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> Dashboards </a></li>
+            <li><a href="#"> Account </a></li>
+            <li><a href="#"> Settings </a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

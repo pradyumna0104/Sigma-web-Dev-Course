@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --pricolor: rgb(121, 238, 97);
+            --seccolor: rgb(211, 252, 211);
+        }
+
+        .navbar {
+            width: 100vw;
+            height: 8vh;
+            background-color: var(--pricolor);
+            position: fixed;
+        }
+
+        main {
+            width: 100vw;
+            background-color: var(--seccolor);
+            padding-bottom: 100px;
+        }
+
+        .home {
+            display: flex;
+        }
+
+        .home .box {
+            width: 25rem;
+            height: 25rem;
+            margin: 70px auto;
+            border: 2px solid black;
+        }
+
+        .left {
+            background-color: coral;
+        }
+
+        .right {
+            background-color: cornflowerblue;
+        }
+
+        .about p {
+            width: 60vw;
+            margin: 40px auto;
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: "Poppins", sans-serif;
+            border: 3px solid rgb(165, 68, 255);
+            border-radius: 100px;
+            padding: 10px 80px;
+            overflow: hidden;
+        }
+        
+        .logo{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+        .logohai {
+            width: 50px;
+            height: 50px;
+            font-size: 2rem;
+            text-shadow: 2px 2px 3px grey;
+            background-color: rgb(237, 207, 40);
+            color: rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+
+        footer{
+            width: 100vw;
+            height: 10vh;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar"></nav>
+    </header>
+    <main>
+        <div class="home">
+            <div class="box left"></div>
+            <div class="box right"></div>
+        </div>
+        <div class="about">
+            <p>Welcome to this Sigma Web Devlopment Express</p>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <div class="logo">
+        <div class="logohai">🕊️</div>
+    </div>
+</body>
+
+</html>
