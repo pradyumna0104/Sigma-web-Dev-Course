@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 'fr' units and align,justify</title>
+    <!-- <style>
+        .container{
+            border: 2px solid black;
+            width: 90vw;
+            height: 90vh;
+
+            display: grid;
+            /* grid-template-columns:1fr 1fr 1fr 1fr; */
+            /* grid-template-columns:1fr 3fr 1fr; */
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:1fr 1fr 1fr 1fr;
+
+            /* gap: 30px; */
+            /* row-gap: 10px;
+            column-gap: 40px; */
+
+        }
+        .item{
+            border: 2px solid red;
+            font-size: 4rem;
+        }
+    </style> -->
+
+
+    <!-- now for align-items and justify-items -->
+     <style>
+        .container{
+            border: 2px solid black;
+            width: 90vw;
+            height: 90vh;
+
+            display: grid;
+
+            /* when use fr use justify-items */
+            /* grid-template-columns:repeat(3,1fr);
+            /* grid-template-columns:repeat(3,minmax(30px,1fr)); */
+            /* grid-template-rows:repeat(3,1fr);
+            align-items: center;
+            justify-items: center; */ 
+
+            /* when use other unit(px) use justify-content */
+            /* grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(4,100px);
+            align-items: center;
+            justify-content: flex-end; */
+
+            /* use of place-content */
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            /* for px units use place-content */
+            /* place-content: center; */
+            /* for fr units use place-items */
+            place-items: center;
+
+        }
+        .item{
+            border: 2px solid red;
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+        }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+    </div>
+</body>
+</html>
