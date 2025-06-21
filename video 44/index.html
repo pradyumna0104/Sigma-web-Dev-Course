@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7 : Display the Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lang {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media only screen and (max-width:910px){
+            .lang{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        } 
+        @media only screen and (max-width:610px){
+            .lang{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        } 
+        .card {
+            margin: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(247, 247, 247);
+            height: 145px;
+            border-radius: 0.4rem;
+        }
+
+        .card h2{
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .card p{
+            font-size: 12px;
+        }
+
+        .button {
+            display: flex;
+        }
+
+        .click {
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 6px;
+            margin: 0px 2px;
+        }
+        .left{
+            background-color: #5cb8ff;
+        }
+        .left:hover{
+            background-color: #30a5ff;
+        }
+        .right{
+            background-color: #5cb85c;
+        }
+        .right:hover{
+            background-color: #30ad30;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="lang">
+            <div class="card">
+                <h2>English</h2>
+                <p> - </p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Deutsch</h2>
+                <p>German</p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Italiano</h2>
+                <p>Italian</p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Español</h2>
+                <p>Spanish</p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>français</h2>
+                <p>French</p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Português brasileiro</h2>
+                <p>Brazilian Portuguese</p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>日本</h2>
+                <p>Japanese</p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>한국어</h2>
+                <p>Korean</p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>华语</h2>
+                <p>Chinese</p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>華語</h2>
+                <p>Traditional Chinese</p>
+                <div class="button">
+                    <div class="click left">Download 32-bit</div>
+                    <div class="click right">Download 64-bit</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

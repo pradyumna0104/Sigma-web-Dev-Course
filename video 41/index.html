@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width: 100vw;
+            height: 10vh;
+        }
+        header nav{
+            height: 10vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 1px 1px 5px gray;
+        }
+
+        header nav ul{
+            list-style: none;
+            display: flex;
+        }
+        header nav ul li{
+            display: flex;
+            margin: 0px 5px;
+            font-size: 17px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(89, 89, 89);
+        }
+        header nav ul li:hover{
+            color: rgb(54, 54, 255);
+            .emoji{
+                filter: grayscale(0);
+            }
+        }
+        
+        header nav ul li a{
+            display: flex;
+            align-items: center;
+        }
+        .extra{
+            display: flex;
+            align-items: center;
+        }
+        .extra button{
+            font-weight: 600;
+            background-color: rgb(255, 255, 255);
+            padding: 7px 17px;
+            border-radius: 4px;
+            margin: 0px 10px;
+        }
+        .extra button:hover{
+            background-color: rgb(54, 53, 53);
+            color: white;
+        }
+        .eng{
+            margin: 0px 10px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+        .eng:hover{
+            color: rgb(0, 183, 255);
+            .emoji{
+                filter: grayscale(0);
+            }
+        }
+        .emoji{
+            filter:grayscale(1);
+        }
+        .emoji:hover{
+            filter:grayscale(0);
+        }
+        .search{
+            margin: 0px 10px;
+            font-size: 1.5rem;
+        }
+        .sma{
+            font-size: 1.5rem;
+        }
+        @media  screen and (max-width:800px) {
+            .ul{
+                display: none;
+            }
+        }
+        @media  screen and (min-width:800px) {
+            .sma{
+                display: none;
+            }
+        }
+        @media  screen and (max-width:450px) {
+            .ul{
+                display: none;
+            }
+            .extra{
+                display: none;
+            }
+            header nav{
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="nav-logo.png" height="30px" alt="logo">
+            <ul class="ul">
+                <li><a>Products<div class="emoji">🔻</div></a></li>
+                <li><a>Pricing<div class="emoji">🔻</div></a></li>
+                <li><a>Resources<div class="emoji">🔻</div></a></li>
+                <li><a>Our company<div class="emoji">🔻</div></a></li>
+            </ul>
+            <div class="extra">
+                <button>BUY NOW</button>
+                <div class="eng"><div class="emoji">🌐 </div>English</div>
+                <div class="search emoji">🔍</div>
+            </div>
+            <div class="sma">
+                <div class="emoji">🟰</div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

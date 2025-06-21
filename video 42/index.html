@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms: Masterclass</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color:coral;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            /* transform: rotate(45deg); */
+
+            /* (1turn = 360 deg) so (0.5turn = 180 deg) */
+            /* transform: rotate(0.5turn); */
+
+            /* transform: rotatex(60deg); */
+            /* transform: rotatey(60deg); */
+            /* transform: rotatez(60deg); */
+
+            /* transform: scale(1.5); */
+            /* transform: scalex(2); */
+            /* transform: scaley(2); */
+            /* transform: scalez(3); */
+
+            /* transform: skew(20deg); */
+            /* transform: skewx(20deg); */
+            /* transform: skewy(20deg ); */
+
+            /* transform: translate(100px); */
+            /* transform: translatex(100px); */
+            /* transform: translatey(100px); */
+            /* transform: translateZ(100px); */
+
+
+            /* if we wnat to apply multiple tranform properties */
+            /* transform: translateX(100px) rotateX(30deg) skewX(30deg); */
+
+
+            transform-origin: 0% 0%;
+            transform: rotate(0.125turn);
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
