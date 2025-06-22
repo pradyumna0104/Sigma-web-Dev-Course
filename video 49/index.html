@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit & Position</title>
+    <style>
+        body {
+            background-color: rgb(32, 32, 32);
+        }
+
+        .container {
+            height: 360px;
+            width: 480px;
+            border: 2px solid rgb(255, 2, 2);
+            background-color: rgb(228, 199, 255);
+        }
+
+        img {
+            height: 360px;
+            width: 480px;
+
+            /* object-fit: cover; */
+            /* here the img is crop to this 380px*360px such that the aspect ratio is maintained (it doesn't look like stretch or elongated) */
+
+            object-fit: cover;
+            /* object-position: top left; */
+            /* object-position: top right; */
+            /* object-position: bottom left; */
+            /* object-position: bottom right; */
+            /* if you also want which portion is mandatory and which portion can be omitted.*/
+
+            /* object-position: 20px 20px; */
+            /* shift the image 20px and 20px from left and top respectiely. (apply on cover/contain.) */
+
+            /* object-fit: contain; */
+            /* here the img is total visible (not crop) to this 380px*360px such that the aspect ratio is maintained (it doesn't care about rest blank space) */
+
+            /* By default property */
+            /* object-fit: fill; */
+            /* here the img is cover 380px*360px such that image is distorted. (not maintain aspect ratio) */
+
+            /* object-fit: scale-down; */
+
+
+        }
+
+        .container2 {
+            margin-top: 20px;
+            height: 360px;
+            width: 480px;
+            border: 2px solid rgb(255, 2, 2);
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS06wlaxl3EyQjTXitOnk6lgFF9fp6ob7vxOw&s");
+            /* by Default if u use small size image then it repeat in background */
+            /* so we can use these properties */
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+
+
+
+            /* background-size: cover; */
+            /* background-position: center center; */
+
+            /* background-clip: border-box;
+            background-clip: padding-box;
+            background-clip: content-box;
+
+            border-box
+            ---------- 
+            The background extends to the outside edge of the border (but underneath the border in z-ordering). 
+            
+            padding-box
+            ----------- 
+            The background extends to the outside edge of the padding. No background is drawn beneath the border.
+
+            content-box
+            ----------- 
+            The background is painted within (clipped to) the content box. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="">
+
+    </div>
+
+    <div class="container2">
+    </div>
+</body>
+
+</html>

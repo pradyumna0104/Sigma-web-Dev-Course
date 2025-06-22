@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        /* img{
+            filter: blur(5px);
+        } */
+         .img1{
+            filter: brightness(130%) contrast(1.2);
+         }
+         .img2{
+            /* filter: hue-rotate(90deg); */
+            /* filter: drop-shadow(10px 10px 20px gray); */
+            /*range - 0-1*/
+            /* filter: invert(0.9);  */
+            /*range - 0-1*/
+            filter: opacity(0.3);
+         }
+         .img3{
+            /* filter: grayscale(30%); */
+            filter: sepia(30%);
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS06wlaxl3EyQjTXitOnk6lgFF9fp6ob7vxOw&s" alt="">
+        <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYwbSSmhovN904FpHGMkWa1QfslZ8tIwlyng&s" alt="">
+        <img class="img3" src="https://www.koimoi.com/wp-content/new-galleries/2022/03/akshay-kumar-was-hilariously-pulled-back-by-a-fan-to-click-a-picture-in-latest-viral-video-001.jpg" height="200px" alt="">
+    </div>
+</body>
+</html>

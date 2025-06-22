@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8:Bounce Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 400px;
+            background-color: beige;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateY(0px) translateX(00px);
+                box-shadow: none;
+            }
+            20%{
+                transform: translateY(-200px) translateX(200px);
+                box-shadow: 0px 3px 10px chocolate;
+            }
+            35%{
+                transform: translateY(0px) translateX(400px);
+                box-shadow: none;
+            }
+            50%{
+                transform: translateY(-150px) translateX(550px);
+                box-shadow: 0px 3px 10px chocolate;
+            }
+            60%{
+                transform: translateY(0px) translateX(700px);
+                box-shadow: none;
+            }
+            70%{
+                transform: translateY(-80px) translateX(780px);
+                box-shadow: 0px 3px 10px chocolate;
+            }
+            75%{
+                transform: translateY(0px) translateX(860px);
+                box-shadow: none;
+            }
+            80%{
+                transform: translateY(-40px) translateX(900px);
+                box-shadow: 0px 3px 10px chocolate;
+            }
+            84%{
+                transform: translateY(0px) translateX(940px);
+                box-shadow: none;
+            }
+            87%{
+                transform: translateY(-15px) translateX(956px);
+                box-shadow: 0px 3px 10px chocolate;
+            }
+            90%{
+                transform: translateY(0px) translateX(970px);
+                box-shadow: none;
+            }
+            92%{
+                transform: translateY(-10px) translateX(980px);
+                box-shadow: 0px 3px 10px chocolate;
+            }
+            94%{
+                transform: translateY(0px) translateX(990px);
+                box-shadow: none;
+            }
+            95%{
+                transform: translateY(-7px) translateX(998px);
+                box-shadow: 0px 3px 10px chocolate;
+            }
+            96%{
+                transform: translateY(0px) translateX(1004px);
+                box-shadow: none;
+            }
+            97%{
+                transform: translateY(-3px) translateX(1008px);
+                box-shadow: 0px 3px 10px chocolate;
+            }
+            98%{
+                transform: translateY(0px) translateX(1010px);
+                box-shadow: none;
+            }
+            99%{
+                transform: translateY(-1px) translateX(1012px);
+                box-shadow: 0px 3px 10px chocolate;
+            }
+            100%{
+                transform: translateY(0px) translateX(1012px);
+                box-shadow: none;
+            }
+        }
+
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: chocolate;
+            animation: bounce 4s linear 0s 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
