@@ -1,42 +1,323 @@
 *{
     margin: 0;
     padding: 0;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(14, 14, 14);
 }
 .main{
     width: 100vw;
-    height: 85vh;
-    background-image: url("assets/home\ bg.jpg");
-    background-repeat: no-repeat;
+    background-image: url("assets/home\ bg-1.jpg");
     background-position: center center;
     position: relative;
 }
 .main-bg{
     width: 100vw;
-    height: 85vh;
-    background-color: rgba(0, 0, 0, 0.62);
+    height: 740px;
+    background-color: rgba(0, 0, 0, 0.758);
     position: absolute;
+    z-index: 1;
 }
 .nav{
-    max-width: 80vw;
+    max-width: 90vw;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
     top: 0;
 }
 .logo{
-    z-index: 20;
-    filter: brightness(1) saturate(1.3);
+    z-index: 2;
 }
 .logo img{
-    width: 160px;
+    width: 190px;
+    filter: contrast(1.2);
+}
+.nav-button{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-button button{
+    margin: 0px 10px;
+}
+.nav-button :nth-child(1) svg{
+    margin: 0px 7px;
 }
 .switch{
+    border: 1px solid #7e7878f0;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+.red{
     border: none;
-    padding: 4px 10px;
-    background-color: rgba(128, 128, 128, 0.24);
-    z-index: 10;
-    filter: saturate(1.4) brightness(1.1);
+    background-color: #ff0000f2;
+}
+.body-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-body{
+    max-width: 45vw;
+    margin: 130px auto;
+    position: relative;
+    z-index: 2;
+}
+.main-body-text{
+    color: white;
+    text-align: center;
+}
+.main-body-text span{
+    display: block;
+}
+.main-body-text :nth-child(1){
+    padding: 15px 20px 13px 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.main-body-text :nth-child(3){
+    margin-top: 20px;
+}
+.main-body-button{
+    margin: 21px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.email-add{
+    background-color: #03030343;
+    padding: 15px 125px 15px 15px;
+    border: 1px solid #565555;
+    border-radius: 4px;
+    font-weight: 500;
+    filter: brightness(1.3);
+    font-size: 15px;
+}
+.get-started{
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px 30px ;
+    color: white;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+.divider{
+    height: 40px;
+    position: relative;
+    top: -30px;
+    z-index: 3;
+    border-top: 4px solid #e31818;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    background: radial-gradient(50% 500% at 50% -360%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+.trending{
+    width: 85vw;
+    margin: 0px auto;
+    position: relative;
+    z-index: 2;
+}
+.trend-head{
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+.trend-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.card{
+    width: 200px;
+    position: relative;
+}
+.card img{
+    width: 150px;
+    height: 200px;
+    position: relative;
+    left: 30px;
+    border-radius: 10px;
+}
+.card p{
+    position: absolute;
+    z-index: 2;
+    left: 5px;
+    bottom: 5px;
+    font-size: 81px;
+    color: black;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px white;
+}
+.reasons{
+    width: 85vw;
+    margin: 0px auto;
+    margin-bottom: 55px;
+}
+.reasons-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.reasons-card{
+    background: linear-gradient(136deg, #1a163d, #1c1a2e, #290d0e);
+    color: white;
+    margin: 8px 8px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 44%;
+}
+.reasons-card :nth-child(1){
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.reasons-card :nth-child(2){
+    font-size: 18px;
+    color: rgb(255 255 255 / 65%);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.reasons-card-img{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.reasons-card-img img{
+    width: 60px;
+    height: 60px;
+}
+.questions{
+    width: 85vw;
+    margin: 20px auto;
+}
+.questions-box-each{
+    background-color: rgb(136 136 136 / 33%);
+    padding: 20px;
+    color: white;
+    margin:10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions-box-each:hover {
+    background-color: rgb(136 136 136 / 53%);
+    transition: all 0.2s linear 0s;
+}
+.questions-box p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.extra{
+    max-width: 60vw;
+    margin: 40px auto;
+}
+.extra-head{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.extra-email{
+    width: 45%;
+    background-color: #5252520b;
+    margin: 0px 10px;
+}
+.extra-body-button{
+    margin: 21px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.call{
+    width: 80vw;
+    margin: 0px auto;
+    color: rgb(213, 213, 213);
+    margin-top: 50px;
+    margin-bottom: 50px;   
+}
+.call a{
+    color: rgb(213, 213, 213);
+}
+.grid-box{
+    width: 80vw;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 50px;
+    row-gap: 15px;
+}
+.grid-box a{
+    font-size: 15px;
+    color: rgb(213, 213, 213);
+}
+.lang-last{
+    margin:10px 0px 25px 9vw;
+    /* margin-left: 9vw;     */
+    /* margin-top: 10px; */
+    /* margin-bottom: 60px; */
+}
+.text-last{
+    margin:10px 0px 40px 9vw;
+    color: rgb(184, 184, 184);
+    font-size: 13px;
+}
+.para-last{
+    margin:10px 0px 100px 9vw;
+    color: rgb(146, 146, 146);
+    font-size: 11px;
+}
+.para-last a{
+    color: rgb(0, 162, 255);
+}
+
+@media only screen and (max-width:1100px) {
+    .main-bg{
+        height: 900px;
+    }  
+    .get-started{
+        margin: 10px 0px;
+    }   
+    .card{
+        margin: 15px 0px;
+    }
+    .reasons-card{
+        width: 34%;
+    }
+
+}
+
+@media only screen and (max-width:1050px) {
+    .grid-box{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .logo img{
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .main-bg{
+        height: 1000px;
+    }   
+    .grid-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .questions-box p{
+        font-size: 15px;
+    }
 }
