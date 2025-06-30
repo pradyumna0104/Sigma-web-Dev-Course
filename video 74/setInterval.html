@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set Interval</title>
+    <style>
+        .container {
+            padding: 20px;
+            background-color: cornflowerblue;
+        }
+
+        .box {
+            padding: 20px;
+            background-color: aliceblue;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            I am a box
+        </div>
+    </div>
+    <script>
+        // Generates a random RGB color string
+        function getrandomColor() {
+            let val1 = Math.floor(Math.random() * 255);
+            let val2 = Math.floor(Math.random() * 255);
+            let val3 = Math.floor(Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`;
+        }
+
+        // --------------------------------------------
+        // Example 1: Using setInterval (commented out)
+        // --------------------------------------------
+        // This will continuously change the background color
+        // of the .box element every 1 second (1000 ms)
+        /*
+        let a = setInterval(() => {
+            document.querySelector(".box").style.backgroundColor = getrandomColor();
+        }, 1000);
+        console.log(a); // Logs interval ID (usually 1)
+        // clearInterval(1); // Uncomment to stop the interval
+        */
+
+        // --------------------------------------------
+        // Example 2: Using setTimeout
+        // --------------------------------------------
+        // This will change the background color of the .box element
+        // once after a delay of 2 seconds (2000 ms)
+        let a = setTimeout(() => {
+            document.querySelector(".box").style.backgroundColor = getrandomColor();
+        }, 2000);
+        console.log(a); // Logs timeout ID (usually 1)
+
+        // clearTimeout(1); // Uncomment to cancel the timeout before it executes
+    </script>
+</body>
+
+</html>

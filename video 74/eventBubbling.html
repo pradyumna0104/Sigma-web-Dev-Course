@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+
+        .container{
+            background-color: crimson;
+            padding: 20px;
+        }
+        .childContainer{
+            background-color: orange;
+            padding: 20px;
+        }
+        .child{
+            background-color: antiquewhite;
+            padding: 20px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                I am a Child
+            </div>
+        </div>
+    </div>
+    <script>
+        /*EVENT BUBBLING EXPLAINED:
+
+         When you click on the "child" div:
+         - The click event first triggers on the child itself,
+         - Then it "bubbles up" (propagates) to the parent: childContainer,
+         - And then further to the grandparent: container.
+
+         If you want to stop the bubbling at any level,
+         you can use e.stopPropagation().
+        */
+
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            // e.stopPropagation(); // Uncomment to stop bubbling beyond this point
+            alert("child was clicked");
+        })
+        document.querySelector(".childContainer").addEventListener("click",(e)=>{
+            // e.stopPropagation(); // Uncomment to stop bubbling beyond this point
+            alert("childContainer was clicked");
+        })
+        document.querySelector(".container").addEventListener("click",(e)=>{
+            alert("container was clicked");
+        })
+    </script>
+</body>
+</html>
