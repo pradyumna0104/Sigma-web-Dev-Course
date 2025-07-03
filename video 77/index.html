@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS exercise 13 : Solution(Dynamic Website Builder)</title>
+    <style>
+        * {
+            color: white;
+            background-color: black;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .card {
+            display: flex;
+            margin: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.227);
+            padding: 10px;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        img {
+            width: 180px;
+            height: 100px;
+            border-radius: 10px;
+        }
+
+        .capsule {
+            position: absolute;
+            bottom: 10px;
+            right: 6px;
+            padding: 1px 2px;
+            background-color: rgb(0 0 0 / 74%);
+            border-radius: 4px;
+        }
+        .text{
+            margin-left: 20px;
+        }
+        .text p{
+            color: darkgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="thumb.png" alt="thumbnail">
+                <div class="capsule">31:20</div>
+            </div>
+            <div class="text">
+                <h2 class="title">Introduction to Backend | Sigma Web Dev video #2</h2>
+                <p>CodeWithHarry . 560000 Views . 7 months ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
