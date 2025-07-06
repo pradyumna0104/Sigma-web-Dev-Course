@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice</title>
+    <style>
+        body {
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes moving {
+            0%{
+                box-shadow: inset 0px -20px white;
+            }
+            25%{
+                box-shadow: inset 20px 0px white;
+            }
+            50%{
+                box-shadow: inset 0px 20px white;
+            }
+            75%{
+                box-shadow: inset -20px 0px white;
+            }
+            100%{
+                box-shadow: inset 0px -20px white;
+            }
+        }
+        
+        .center {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0px 0px 20px 4px black inset;
+            animation: moving 4s cubic-bezier(0, 0, 1, 1) infinite;
+        }
+        .side {
+            transform-origin: center;
+            position: absolute;
+            z-index: 2;
+            width: 23px;
+            height: 40px;
+            background-color: blueviolet;
+            /* box-shadow: inset 8px 7px 7px 0px black; */
+            animation: moving 4s cubic-bezier(0, 0, 1, 1) infinite;
+            border-radius: 12px;
+        }
+
+        .side:nth-child(1) {
+            translate: 39px -42px;
+        }
+
+        .side:nth-child(2) {
+            translate: 89px -21px;
+            rotate: 45deg;
+        }
+
+        .side:nth-child(3) {
+            translate: 110px 29px;
+            rotate: 90deg;
+        }
+
+        .side:nth-child(4) {
+            translate: 89px 81px;
+            rotate: 136deg;
+        }
+
+        .side:nth-child(5) {
+            translate: 37px 102px;
+            rotate: 180deg;
+        }
+
+        .side:nth-child(6) {
+            translate: -12px 81px;
+            rotate: 224deg;
+        }
+
+        .side:nth-child(7) {
+            translate: -33px 30px;
+            rotate: 270deg;
+        }
+
+        .side:nth-child(8) {
+            translate: -13px -20px;
+            rotate: 315deg;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+        <div class="side"></div>
+    </div>
+</body>
+
+</html>
