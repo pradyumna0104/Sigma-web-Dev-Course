@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="img/fevicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="home bg-grey m-1 p-1 rounded">
+                <img class="invert" src="img/logo.svg" alt="logo">
+                <img class="close-icon invert" src="img/close.svg" alt="close">
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="library-head flex algin-center">
+                    <img class="invert" src="img/playlist.svg" alt="">
+                    <p>Your Library</p>
+                </div>
+                <div class="library-songs">
+                    <ul>
+                        <!-- add by js -->
+                    </ul>
+                </div>
+                <div class="library-foot flex">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="right-header flex">
+                <div class="right-header-nav p-1">
+                    <img class="hamburger invert" src="img/hamburger.svg" alt="hamburger">
+                    <img class="left-arrow invert" src="img/left-arrow.svg" alt="left">
+                    <img class="right-arrow invert" src="img/right-arrow.svg" alt="right">
+                </div>
+                <div class="right-header-button p-1">
+                    <button class="sign-up">Sign Up</button>
+                    <button class="log-in">Log In</button>
+                </div>
+            </div>
+            <div class="playlists">
+                <div class="playlists-head">
+                    <h2>Spotify Playlists</h2>
+                </div>
+                <div class="playlists-card flex">
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/Angry_(mood)/cover.jpg" alt="Angry (mood)">
+                        <h3>Angry Songs</h3>
+                        <p>Calm your Anger</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/Bright_(mood)/cover.jpg" alt="Bright (mood)">
+                        <h3>Bright Songs</h3>
+                        <p>Feel the brightness and joy!</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/Chill_(mood)/cover.jpg" alt="Chill (mood)">
+                        <h3>Chill Songs</h3>
+                        <p>Relax and unwind with chill vibes.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/cs/cover.jpg" alt="cs">
+                        <h3>CS Playlist</h3>
+                        <p>Best of Cool Summer themed tracks.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/Dark_(mood)/cover.jpg" alt="Dark (mood)">
+                        <h3>Dark Songs</h3>
+                        <p>Explore the depth of dark moods.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/Diljit/cover.jpg" alt="Diljit">
+                        <h3>Diljit Hits</h3>
+                        <p>Top tracks by Diljit Dosanjh.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/Funky_(mood)/cover.jpg" alt="Funky (mood)">
+                        <h3>Funky Songs</h3>
+                        <p>Get groovy with funky beats!</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/Karan aujla/cover.jpg" alt="Karan Aujla">
+                        <h3>Karan Aujla Hits</h3>
+                        <p>Best of Karan Aujla's music.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/Love_(mood)/cover.jpg" alt="Love (mood)">
+                        <h3>Love Songs</h3>
+                        <p>Feel the romance with these tracks.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/ncs/cover.jpg" alt="NCS">
+                        <h3>NCS Playlist</h3>
+                        <p>No Copyright Sounds for creators.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card-button" src="img/play-button.svg" alt="svg">
+                        <img src="songs-info/Uplifting_(mood)/cover.jpg" alt="Uplifting (mood)">
+                        <h3>Uplifting Songs</h3>
+                        <p>Get motivated and uplifted!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="song-bar">
+                    <div class="song-info">52 bars</div>
+                    <div class="song-buttons">
+                        <img id="previous" src="img/prevsong.svg" alt="previous">
+                        <img id="playsong" src="img/play.svg" alt="play">
+                        <img id="next" src="img/nextsong.svg" alt="next">
+                    </div>
+                    <div class="song-time"></div>
+                </div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
