@@ -1,18 +1,21 @@
 const express = require('express')
+const blog  = require('./routes/blog')
+
 const app = express()
 const port = 3000
 
 app.use(express.static("public"))
+app.use('/blog',blog)
 
-// app.get('/', (req, res) => {
-//   console.log("Hey its a get Request.")
-//   res.send('Hello World!')
-// })
+app.get('/', (req, res) => {
+  console.log("Hey its a get Request.")
+  res.send('Hello World21!')
+})
 
-// app.post('/', (req, res) => {
-//   console.log("Hey its a Post Request.")
-//   res.send('Hello World Post')
-// })
+app.post('/', (req, res) => {
+  console.log("Hey its a Post Request.")
+  res.send('Hello World Post')
+})
 
 // app.put('/', (req, res) => {
 //   console.log("Hey its a Put Request.")
@@ -45,7 +48,12 @@ app.use(express.static("public"))
 
 app.get('/index', (req, res) => {
   console.log("Hey its a Index.")
-  res.sendFile("templates/index.html",{root:__dirname})
+  res.sendFile("templates/index.html", { root: __dirname })
+})
+
+
+app.get('/api', (req,res)=>{
+  res.json({ a : 1, b : 2, c : 3, name : ["haru","raghu"]})
 })
 
 app.listen(port, () => {
